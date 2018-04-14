@@ -7,16 +7,6 @@ router.use(function timeLog (req, res, next) {
     next()
 })
 
-//define the home page route
-router.get('/', function (req, res) {
-    res.send('Hello world')
-});
-
-//define the about route
-router.get('/about', function (req, res) {
-    res.send('About me')
-})
-
 //send template output by filename
 router.get('/', (req, res) => {
     const data = {
@@ -28,6 +18,16 @@ router.get('/', (req, res) => {
 
     res.send('index', data);
 });
+
+//define the home page route
+router.get('/', function (req, res) {
+    res.render('index')
+});
+
+//define the about route
+router.get('/about', function (req, res) {
+    res.send('About me')
+})
 
 
 module.exports = router

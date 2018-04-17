@@ -1,5 +1,9 @@
 var express = require('express')
 var router = express.Router()
+var fs = require('fs')
+var myCss = {
+    style : fs.readFileSync('./style.css','utf8')
+}
 
 //middleware specific to this router
 router.use(function timeLog (req, res, next) {
@@ -21,7 +25,9 @@ router.get('/', (req, res) => {
 
 //define the home page route
 router.get('/', function (req, res) {
-    res.render('index')
+    res.render('index', {
+        myCss: myCss
+    });
 });
 
 //define the about route

@@ -5,14 +5,12 @@ const bodyParser = require('body-parser');
 const app = express();
 
 var profile = require('./profile')
-var contact = require('./contact')
-
 
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/', profile)
-app.use('/contact', contact)
+app.use('/', contact)
 
 
 //set views directory to ./views

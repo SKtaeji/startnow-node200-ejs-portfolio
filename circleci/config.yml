@@ -43,7 +43,7 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: sktaeji-portfolio
+      appname: node200-ejs-portfolio
 machine:
   node:
     version: 8.11.0

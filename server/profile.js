@@ -1,9 +1,6 @@
 var express = require('express')
 var router = express.Router()
-var fs = require('fs')
-var myCss = {
-    style : fs.readFileSync('./style.css','utf8')
-}
+
 
 //middleware specific to this router
 router.use(function timeLog (req, res, next) {
@@ -15,25 +12,23 @@ router.use(function timeLog (req, res, next) {
 router.get('/', (req, res) => {
     const data = {
         person: {
-            firstName: 'Sam',
+            firstName: 'Samuel T',
             lastName: 'Kim',
         }
     }
 
-    res.send('index', data);
+    res.render('index', data);
 });
 
 //define the home page route
 router.get('/', function (req, res) {
-    res.render('index', {
-        myCss: myCss
-    });
+    res.render('index');
 });
 
 //define the about route
-router.get('/about', function (req, res) {
-    res.send('About me')
-})
+// router.get('/about', function (req, res) {
+//     res.send('About me')
+// })
 
 
 module.exports = router

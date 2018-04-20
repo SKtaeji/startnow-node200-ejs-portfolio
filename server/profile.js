@@ -1,28 +1,27 @@
-var express = require('express')
-var router = express.Router()
-
+var express = require("express");
+var router = express.Router();
 
 //middleware specific to this router
-router.use(function timeLog (req, res, next) {
-    console.log('Time: ', Date.now())
-    next()
-})
+router.use(function timeLog(req, res, next) {
+  console.log("Time: ", Date.now());
+  next();
+});
 
 //send template output by filename
-router.get('/', (req, res) => {
-    const data = {
-        person: {
-            firstName: 'Samuel T',
-            lastName: 'Kim',
-        }
+router.get("/", (req, res) => {
+  const data = {
+    person: {
+      firstName: "Samuel T",
+      lastName: "Kim"
     }
+  };
 
-    res.render('index', data);
+  res.render("index", data);
 });
 
 //define the home page route
-router.get('/', function (req, res) {
-    res.render('index');
+router.get("/", function(req, res) {
+  res.render("index");
 });
 
 //define the about route
@@ -30,5 +29,4 @@ router.get('/', function (req, res) {
 //     res.send('About me')
 // })
 
-
-module.exports = router
+module.exports = router;

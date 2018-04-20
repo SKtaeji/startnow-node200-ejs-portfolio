@@ -1,0 +1,33 @@
+/*Fonts:
+font-family: 'Open Sans', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 44px;
+  margin: auto;
+}
+
+h4 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}

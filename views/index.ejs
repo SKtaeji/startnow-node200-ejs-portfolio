@@ -17,36 +17,51 @@
             </h2>
             <hr />
             <ul>
-                <li><a name="linkedIn" href="https://www.linkedin.com/in/samuel-kim-96326876/"><img src="/linkedin/In-Black-34px-TM.png" /></a></li>
-                <li><a name="gitHub" href="https://github.com/SKtaeji"><img src="/github/GitHub-Mark-32px.png"  /></a></li>                
+                <li>
+                    <a name="linkedIn" href="https://www.linkedin.com/in/samuel-kim-96326876/">
+                        <img src="/linkedin/In-Black-34px-TM.png" />
+                    </a>
+                </li>
+                <li>
+                    <a name="gitHub" href="https://github.com/SKtaeji">
+                        <img src="/github/GitHub-Mark-32px.png" />
+                    </a>
+                </li>
             </ul>
         </header>
         <main>
             <h3>Who am I?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ornare leo, ut semper ante tincidunt a. Ut sollicitudin, justo ut bibendum rutrum, tellus mauris hendrerit orci, in vestibulum justo turpis sit amet ex. Mauris viverra, risus eu vestibulum facilisis, nibh dui pellentesque nulla, a aliquam dui nibh nec nulla. Aliquam sit amet elit a velit dapibus tristique id nec nibh. Suspendisse libero dui, scelerisque et mollis eu, venenatis eget dolor. Nullam viverra quis ante id faucibus. Pellentesque at sapien ac augue iaculis ornare quis id sem. Donec nec gravida leo, vitae pretium nibh. Sed dapibus dui et massa eleifend consequat. Nulla ligula eros, maximus in faucibus eu, congue vitae dui.</p>
-    
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ornare leo, ut semper ante tincidunt
+                a. Ut sollicitudin, justo ut bibendum rutrum, tellus mauris hendrerit orci, in vestibulum justo turpis sit
+                amet ex. Mauris viverra, risus eu vestibulum facilisis, nibh dui pellentesque nulla, a aliquam dui nibh nec
+                nulla. Aliquam sit amet elit a velit dapibus tristique id nec nibh. Suspendisse libero dui, scelerisque et
+                mollis eu, venenatis eget dolor. Nullam viverra quis ante id faucibus. Pellentesque at sapien ac augue iaculis
+                ornare quis id sem. Donec nec gravida leo, vitae pretium nibh. Sed dapibus dui et massa eleifend consequat.
+                Nulla ligula eros, maximus in faucibus eu, congue vitae dui.</p>
+
             <a name="spread">
-                    <img src= "/projlay/markus-spiske-357131-unsplash.jpg" />
-                    <img src= "/projlay/greg-rakozy-129733-unsplash.jpg" />
+                <img src="/projlay/markus-spiske-357131-unsplash.jpg" />
+                <img src="/projlay/greg-rakozy-129733-unsplash.jpg" />
             </a>
-        </main>    
+        </main>
     </div>
-    
+
     <footer>
         <h1>Contact</h1>
         <form action="/thanks" method="POST">
-        <label for="firstName">First Name:</label>
-        <input id="firstName" name="firstName" type="text">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" name="user[firstName]" type="text">
 
-        <label for="lastName">Last Name:</label>
-        <input id="lastName" name="lastName" type="text">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" name="user[lastName]" type="text">
 
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text">
+            <label for="email">Email:</label>
+            <input id="email" name="user[email]" type="text">
 
-        <input type="submit" />
-    </form>
-</footer>
+            <input type="submit" />
+        </form>
+    </footer>
 </body>
 
 </html>

@@ -1,11 +1,22 @@
 <html>
-  <head>
-    <title>Sam Thanks You</title>
-  </head>
-  <body>
-    <div id="thanks">
-      <h3>Thank you</h3> 
-      <h4><%= contact.firstName %> <%= contact.lastName %>.</h4>
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="/css/thanks.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200i,400,500|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
+  <title>Sam Thanks You</title>
+</head>
+
+<body>
+  <div id="thanks">
+    <h2>Thank you!</h2>
+    <h4>
+      <%= user.firstName %>
+        <%= user.lastName %>!</h4>
+    <p>Your contact information has been sent. </p>
+    <p>Please click 'Back' to return to the previous page.</p>
+  </div>
+</body>
+
 </html>

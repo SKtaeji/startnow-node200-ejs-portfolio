@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
+const PORT = process.env.PORT || 8080;
 require("dotenv").config();
 const client = require("twilio")(
   process.env.TWILIO_SID,
@@ -50,6 +51,6 @@ app.set("views", "./views");
 //set default engine to ejs
 app.set("view engine", "ejs");
 
-app.listen(8080, () => {
-  console.log("listening at http://localhost:8080");
-});
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+  });

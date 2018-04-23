@@ -16,8 +16,8 @@ const profile = require("./profile");
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "..\\public")));
-app.use(express.static(path.join(__dirname, "..\\img")));
+app.use(express.static(__dirname, "..\\public"));
+app.use(express.static(__dirname, "..\\img"));
 app.use("/", profile);
 
 app.post("/thanks", (req, res) => {

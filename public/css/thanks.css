@@ -14,9 +14,14 @@ font-family: 'Ubuntu Condensed', sans-serif;
   clear: both;
 }
 
+body {
+  text-align: center;
+  padding-top: 16em;
+}
+
 h2 {
-  font-family: "IBM Plex Serif", serif;
-  font-size: 44px;
+  font-family: "IBM Plex Serif:200i", serif;
+  font-size: 36px;
   margin: auto;
 }
 

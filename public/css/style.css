@@ -1,48 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200i,400,500|Open+Sans|Ubuntu+Condensed');
+
 /*Fonts:
 font-family: 'Open Sans', sans-serif;
 font-family: 'IBM Plex Serif', serif;
 font-family: 'Ubuntu Condensed', sans-serif;
  */
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+html {
+  box-sizing: border-box;
 }
-
-.clearfix:after {
-  clear: both;
-}
-
-header ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-header li {
-  float: right;
-  letter-spacing: 2px;
-}
-
-header img {
-  display: block;
-  padding: 8px;
-}
-
-.header {
-  padding: 10px 16px;
-  background: rgb(245, 245, 245);
-  color: #1d2a5a;
-  position: fixed;
-  width: 100%;
-  max-width: auto;
-}
-
-header h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 34px;
-  text-align: center;
-  text-shadow: 4px 4px 4px #aaa;
+*,
+* :before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -51,44 +21,151 @@ html {
 }
 
 body {
-  height: 100%;
   width: 100%;
-  background-color: rgb(245, 245, 245);
-  margin: 0;
+  height: 100%;
+  background-color: rgb(245,245,245);
 }
 
-h3 {
-  font-family: "IBM Plex Serif:200i", serif;
-  text-align: left;
-  padding-left: 200px;
+header {
+  width: 100%;
+  height: auto;
+  background-color: rgb(124, 124, 124);
+  font-family: "IBM Plex Serif", serif;
+  position: fixed;
+  z-index: 9999;
 }
 
-p {
-  font-family: "IBM Plex Serif:200i", serif;
-  text-align: left;
-  word-wrap: break-word;
-  width: 330px;
-  padding-left: 200px;
+header h1 {
+  color: rgb(248,248,255);
+  text-shadow: 3px 3px 2px rgba(45, 40, 33, 0.39);
 }
 
 main {
-  height: 100%;
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+  padding-top: 8em;
+}
+
+.trow {
+  padding: 40px 0;
+}
+
+.socialmedia {
   width: 100%;
-  padding-top: 12em;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 80px;
 }
 
-main a img {
-  padding: 8px;
-  align-content: center;
+.socialmedia img {
+  float: right;
+  padding: 0 10px;
 }
 
-footer {
-  text-align: left;
-  padding-left: 0.5em;
-  font-family: "Ubuntu Condensed", sans-serif;
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  width: 50%;
 }
 
 h1 {
-  font-family: "Ubuntu Condensed", sans-serif;
-  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+}
+
+.trow h1 {
+  font-family: "IBM Plex Serif", serif;
+  text-align: left;
+}
+
+.trow p {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 20px;
+}
+
+.sbox {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: 20px auto 20px;
+}
+
+.sbox a:hover {
+  text-decoration: none;
+}
+
+.sbox img {
+  width: 80%;
+  text-align: center;
+}
+
+.sbox h4{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.imagebox img {
+  width: 100%;
+}
+
+footer h2 {
+  font-family: 'IBM Plex Serif', serif;
+  color: white;
+  text-shadow: 3px 3px 2px rgba(45, 40, 33, 0.39);
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.buttonbox {
+  padding: 40px;
+  text-align: center;
+}
+
+footer button {
+  width: 230px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 7px 0;
+  border: 1px solid black;
+  text-align: center;
+  transition: 2s;
+}
+
+footer button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+footer {
+  margin: 45px 0 0;
+  background-color: rgb(124, 124, 124);
+  display: inline-block;
+  width: 100%;
+  padding: 45px 0;
+}
+
+footer .footer-block {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+label{
+  display: inline-block;
+  color: white;
+}
+
+input {
+display: inline-block;
+
+}
+
+.labels {
+  text-align: center;
 }

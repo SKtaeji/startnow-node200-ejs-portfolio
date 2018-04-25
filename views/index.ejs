@@ -3,64 +3,93 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200i,400,500|Open+Sans|Ubuntu+Condensed" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200i,400,500|Open+Sans|Ubuntu+Condensed" rel="stylesheet">
-    <title>Sam's Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>My Portfolio</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="header" id="myHeader">
-            <h2>
-                <%= person.firstName %>
-                    <%= person.lastName %>
-            </h2>
-            <hr />
-            <ul>
-                <li>
-                    <a name="linkedIn" href="https://www.linkedin.com/in/samuel-kim-96326876/">
-                        <img src="/img/linkedin/In-Black-34px-TM.png" />
-                    </a>
-                </li>
-                <li>
-                    <a name="gitHub" href="https://github.com/SKtaeji">
-                        <img src="/img/github/GitHub-Mark-32px.png" />
-                    </a>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <h3>Who am I?</h3>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ornare leo, ut semper ante tincidunt
-                a. Ut sollicitudin, justo ut bibendum rutrum, tellus mauris hendrerit orci, in vestibulum justo turpis sit
-                amet ex. Mauris viverra, risus eu vestibulum facilisis, nibh dui pellentesque nulla, a aliquam dui nibh nec
-                nulla. Aliquam sit amet elit a velit dapibus tristique id nec nibh. Suspendisse libero dui, scelerisque et
-                mollis eu, venenatis eget dolor. Nullam viverra quis ante id faucibus. Pellentesque at sapien ac augue iaculis
-                ornare quis id sem. Donec nec gravida leo, vitae pretium nibh. Sed dapibus dui et massa eleifend consequat.
-                Nulla ligula eros, maximus in faucibus eu, congue vitae dui.</p>
-
-            <a name="spread">
-                <img src="/img/projlay/markus-spiske-357131-unsplash.jpg" />
-                <img src="/img/projlay/greg-rakozy-129733-unsplash.jpg" />
+    <header class="header" id="myHeader">
+        <h1>
+            <%= person.firstName %>
+                <%= person.lastName %>
+        </h1>
+        <hr />
+    </header>
+    <main>
+        <div class="socialmedia">
+            <a name="linkedIn" href="https://www.linkedin.com/in/samuel-kim-96326876/">
+                <img src="/img/linkedin/In-Black-34px-TM.png" />
             </a>
-        </main>
-    </div>
+
+            <a name="gitHub" href="https://github.com/SKtaeji">
+                <img src="/img/github/GitHub-Mark-32px.png" />
+            </a>
+        </div>
+
+        <div class="row trow">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>Who am I?</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Euismod nisi porta lorem mollis aliquam ut porttitor leo a. Eleifend quam adipiscing vitae
+                    proin sagittis nisl. Proin libero nunc consequat interdum varius. Consectetur adipiscing elit pellentesque
+                    habitant morbi tristique senectus. Consequat nisl vel pretium lectus quam id leo in vitae. Ornare lectus
+                    sit amet est placerat in egestas erat. Tellus in metus vulputate eu. Egestas sed tempus urna et pharetra
+                    pharetra massa massa ultricies. Mus mauris vitae ultricies leo integer. Imperdiet sed euismod nisi porta
+                    lorem mollis aliquam.</p>
+
+                <p>Lacinia at quis risus sed vulputate odio ut. Dignissim convallis aenean et tortor at. Pharetra sit amet aliquam
+                    id diam maecenas ultricies mi. Vitae tempus quam pellentesque nec. In mollis nunc sed id semper risus.
+                    Sed sed risus pretium quam vulputate dignissim. Justo nec ultrices dui sapien eget. Sollicitudin ac orci
+                    phasellus egestas tellus rutrum tellus. Ut tellus elementum sagittis vitae et. Quis vel eros donec ac
+                    odio. Nulla facilisi cras fermentum odio eu. Porttitor massa id neque aliquam vestibulum.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="sbox">
+                    <a href="https://sk-startnow-vstda.herokuapp.com/">
+                        <img src="/img/projprev/vstda_preview.png">
+                        <h4>Very Simple To Do App</h4>
+                    </a>
+                </div>
+                <div class="sbox">
+                    <a href="https://sk-startnow-sdtopspots.herokuapp.com/">
+                        <img src="/img/projprev/sdtopspots_preview.png">
+                        <h4>San Diego Top Spots</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="/img/projlay/markus-spiske-357131-unsplash.jpg" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p5" />
+            <img src="/img/projlay/greg-rakozy-129733-unsplash.jpg" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 p5" />
+        </div>
+    </main>
+
 
     <footer>
-        <h1>Contact</h1>
-        <form action="/thanks" method="POST">
-            <label for="firstName">First Name:</label>
-            <input id="firstName" name="user[firstName]" type="text">
-
-            <label for="lastName">Last Name:</label>
-            <input id="lastName" name="user[lastName]" type="text">
-
-            <label for="email">Email:</label>
-            <input id="email" name="user[email]" type="text">
-
-            <input type="submit" />
-        </form>
+        <div class="footer-block">
+            <h2>Contact</h2>
+            <form action="/thanks" method="POST">
+                <div class="labels">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" name="user[firstName]" type="text">
+                </div>
+                <div class="labels">
+                    <label for="lastName" style="padding-left: 2px">Last Name:</label>
+                    <input id="lastName" name="user[lastName]" type="text">
+                </div>
+                <div class="labels">
+                    <label for="email" style="padding-left: 35px">Email:</label>
+                    <input id="email" name="user[email]" type="text">
+                </div>
+                <div class="buttonbox">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </footer>
 </body>
 
